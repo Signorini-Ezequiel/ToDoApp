@@ -1,13 +1,13 @@
 from django.db import models
 
 # Create your models here.
-class States(models.Model):
+class State(models.Model):
     STATE_CHOICES = (
         ('0', 'To do'),
         ('1', 'Doing'),
         ('2', 'Done')
     )
-    state = models.CharField(("State name"), null=False, blank=False)
+    state = models.CharField(("State name"), max_length=5, null=False, blank=False, choices=STATE_CHOICES)
     
     def __str__(self):
-        return self.name
+        return self.state

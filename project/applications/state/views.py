@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
 # Create your views here.
-from .models import States
+from .models import State
 from django.views.generic.list import ListView
 
 class StatesListView(ListView):
-    model = States
+    model = State
     template_name = "states/states.html"
