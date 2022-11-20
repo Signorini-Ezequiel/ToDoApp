@@ -1,0 +1,41 @@
+/* Background colors */
+/* ------------------------------- */
+.bg-primary {
+    background-color: #083d77;
+}
+.bg-secondary {
+    background-color: #eef4ed;
+}
+.bg-dark {
+    background-color: #0b2545;
+}
+.bg-alert {
+    background-color: #f4d35e;
+}
+.bg-danger {
+    background-color: #f95738;
+}
+.bg-success {
+    background-color: #4c956c;
+}
+
+/* Colors */
+/* ------------------------------- */
+.c-primary {
+    color: #083d77;
+}
+.c-secondary {
+    color: #eef4ed;
+}
+.c-dark {
+    color: #0b2545;
+}
+.c-alert {
+    color: #f4d35e;
+}
+.c-danger {
+    color: #f95738;
+}
+.c-success {
+    color: #4c956c;
+}

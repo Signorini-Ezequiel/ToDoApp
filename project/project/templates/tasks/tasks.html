@@ -8,13 +8,24 @@ Your tasks | Todo
 {% block content %}
     {% include 'includes/header.html' %}
     <h1>Your tasks</h1>
-    {% for task in tasks %}
-        <div class="card">
-            <div class="card-divider">task.name</div>
+    <div class="grid-x align-spaced bg-secondary">
+        {% for task in tasks %}
+            <div class="card cell small-4">
+                <div class="card-divider">task.name</div>
+                <div class="card-section">
+                    <p>task.description</p>
+                    <h4>task.state</h4>
+                </div>
+            </div>
+        {% endfor %}
+
+
+        <div class="card cell small-4 bg-primary">
+            <div class="card-divider c-secondary">task.name</div>
             <div class="card-section">
-                <p>task.description</p>
-                <h4>task.state</h4>
+                <p class="c-secondary">task.description</p>
+                <h4 class="c-secondary">task.state</h4>
             </div>
         </div>
-    {% endfor %}
+    </div>
 {% endblock content %}
