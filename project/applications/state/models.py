@@ -7,7 +7,7 @@ class State(models.Model):
         ('1', 'Doing'),
         ('2', 'Done')
     )
-    state = models.CharField(("State name"), max_length=5, null=False, blank=False, choices=STATE_CHOICES)
+    statename = models.CharField(("State name"), max_length=5, null=False, blank=False, choices=STATE_CHOICES)
     
     def __str__(self):
-        return self.state
+        return self.statename
